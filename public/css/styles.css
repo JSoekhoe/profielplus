@@ -1,0 +1,265 @@
+/* Algemeen opmaak reset voor consistente layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Algemene body styling: stelt achtergrondkleur, lettertype, en tekstopmaak in */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc; /* Lichte grijze achtergrond vergelijkbaar met Laravel */
+    color: #212529; /* Donkere tekstkleur voor contrast */
+    line-height: 1.6; /* Verbetert de leesbaarheid */
+}
+
+/* Navigatiebalk styling: zorgt voor een donkere achtergrondkleur en padding */
+nav {
+    background-color: #343a40; /* Donkergrijze achtergrondkleur voor contrast */
+    color: white; /* Witte tekst voor leesbaarheid op donkere achtergrond */
+    padding: 1rem; /* Voeg ruimte toe rond de tekst in de navigatiebalk */
+}
+
+/* Navigatielijst styling: verwijdert opsommingstekens en stelt horizontale uitlijning in */
+nav ul {
+    list-style: none; /* Verwijdert standaard opsommingstekens van de lijst */
+    display: flex; /* Maakt de lijstitems horizontaal */
+    justify-content: space-around; /* Verspreidt de links gelijkmatig */
+}
+
+/* Individuele navigatie-items */
+nav ul li {
+    display: inline; /* Zorgt ervoor dat items naast elkaar worden weergegeven */
+}
+
+/* Navigatielinks: witte tekst zonder onderstreping voor consistentie */
+nav ul li a {
+    color: white; /* Zorgt voor leesbare tekst op donkere achtergrond */
+    text-decoration: none; /* Verwijdert onderstreping */
+    padding: 0.5rem 1rem; /* Maakt klikbare ruimte groter voor betere toegankelijkheid */
+}
+
+/* Hover effect voor navigatielinks: verandert achtergrondkleur en voegt afgeronde hoeken toe */
+nav ul li a:hover {
+    background-color: #495057; /* Iets lichter bij hover voor feedback */
+    border-radius: 5px; /* Maakt randen licht afgerond */
+}
+
+/* Algemene styling voor de hoofdinhoud, zorgt voor ruimte rond de tekst */
+main {
+    padding: 2rem; /* Voegt ruimte toe rond de inhoud */
+    text-align: center; /* Centreert de inhoud van de pagina */
+}
+
+/* Stijling voor hoofdtitels (h1), maakt de tekst groter en voegt ruimte onder */
+h1 {
+    font-size: 2.5rem; /* Grote tekst voor belangrijke titels */
+    margin-bottom: 1rem; /* Voeg ruimte toe onder de titel */
+}
+
+/* Paragraaf styling: grotere tekst en extra ruimte onder */
+p {
+    font-size: 1.2rem; /* Verhoogt de leesbaarheid van paragrafen */
+    margin-bottom: 1.5rem; /* Voeg ruimte toe onder paragrafen */
+}
+
+/* Styling voor de login-container */
+.login-container {
+    max-width: 400px; /* Maximale breedte van het formulier */
+    margin: 5rem auto; /* Centraal uitlijnen met ruimte boven en onder */
+    padding: 2rem; /* Binnenruimte voor het formulier */
+    background-color: #ffffff; /* Witte achtergrond voor het formulier */
+    border-radius: 8px; /* Afgeronde hoeken voor een moderne look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte-effect */
+}
+
+/* Styling voor de titel in het formulier */
+.login-container h2 {
+    margin-bottom: 1.5rem; /* Ruimte onder de titel */
+    font-size: 1.8rem; /* Grotere tekst voor de titel */
+    text-align: center; /* Centreer de titel */
+    color: #343a40; /* Donkere kleur voor contrast */
+}
+
+/* Algemene styling voor inputgroepen */
+.input-group {
+    margin-bottom: 1.5rem; /* Ruimte tussen inputgroepen */
+    display: flex; /* Flexbox gebruiken voor uitlijning */
+    flex-direction: column; /* Verander de richting naar kolommen */
+}
+
+/* Styling voor labels */
+.input-group label {
+    display: block; /* Zorg ervoor dat labels boven de invoervelden staan */
+    margin-bottom: 0.5rem; /* Ruimte onder de label */
+    font-weight: bold; /* Maak de labels vetgedrukt */
+    color: #343a40; /* Donkere kleur voor leesbaarheid */
+}
+
+/* Styling voor invoervelden */
+.input-group input {
+    width: 100%; /* Volledige breedte van het formulier */
+    padding: 0.8rem; /* Binnenruimte in de invoervelden */
+    border: 1px solid #ced4da; /* Grijze rand */
+    border-radius: 5px; /* Afgeronde hoeken */
+    font-size: 1rem; /* Grotere tekst voor betere leesbaarheid */
+    transition: border-color 0.3s; /* Soepele overgang van randkleur */
+}
+
+/* Focus-effect voor invoervelden */
+.input-group input:focus {
+    border-color: #007bff; /* Blauw bij focus */
+    outline: none; /* Verwijder standaard focusoutline */
+}
+
+/* Styling voor de login knop */
+#loginButton {
+    width: 100%; /* Volledige breedte van de knop */
+    padding: 0.8rem; /* Binnenruimte in de knop */
+    background-color: #343a40; /* Donkergrijze achtergrondkleur voor contrast */
+    color: white; /* Witte tekst */
+    border: none; /* Geen rand */
+    border-radius: 5px; /* Afgeronde hoeken */
+    font-size: 1rem; /* Grotere tekst voor de knop */
+    cursor: pointer; /* Handcursor bij hover */
+    transition: background-color 0.3s; /* Soepele overgang voor hover */
+}
+
+/* Hover-effect voor de login knop */
+#loginButton:hover {
+    background-color: #495057; /* Iets lichter bij hover voor feedback */
+}
+
+/* Styling voor foutmeldingen */
+.error-message {
+    color: red; /* Rode tekst voor foutmeldingen */
+    margin-top: 1rem; /* Ruimte boven de foutmelding */
+    text-align: center; /* Centreer de foutmelding */
+}
+
+/* Algemene styling voor dashboard secties */
+.dashboard-section {
+    background-color: #ffffff; /* Witte achtergrond voor secties */
+    border-radius: 8px; /* Afgeronde hoeken voor een moderne uitstraling */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte-effect */
+    padding: 2rem; /* Binnenruimte voor secties */
+    margin-bottom: 2rem; /* Ruimte onder secties */
+    text-align: center;
+}
+
+/* Titel styling voor secties */
+.dashboard-section h2 {
+    font-size: 2rem; /* Grotere tekst voor titels */
+    color: #343a40; /* Donkere kleur voor contrast */
+    margin-bottom: 1rem; /* Ruimte onder titels */
+    text-align: center; /* Links uitlijnen voor sectietitels */
+}
+
+/* Responsive tabel in de dashboard secties */
+.dashboard-table-container {
+    overflow-x: auto;
+    margin-top: 1rem;
+}
+
+.dashboard-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.dashboard-table-container th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    text-align: left; /* Links uitgelijnd voor kolomtitels */
+}
+
+.dashboard-table-container td {
+    background-color: #ffffff;
+    text-align: center; /* Gecentreerd voor inhoud van cellen */
+}
+
+.dashboard-table-container th, .dashboard-table-container td {
+    padding: 0.75rem;
+    border: 1px solid #dee2e6;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+    .dashboard-table-container th, .dashboard-table-container td {
+        font-size: 0.875rem;
+        padding: 0.5rem;
+        white-space: normal;
+    }
+}
+
+
+/* Knop styling in secties */
+.dashboard-section button {
+    padding: 0.8rem;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+/* Hover-effect voor de knoppen */
+.dashboard-section button:hover {
+    background-color: #495057;
+}
+
+/* Styling voor de container van de edit- en create-pagina */
+.edit-form-container {
+    max-width: 400px; /* Zelfde breedte als login-container */
+    margin: 5rem auto; /* Centreer en ruimte boven en onder */
+    padding: 2rem; /* Binnenruimte */
+    background-color: #ffffff; /* Witte achtergrond */
+    border-radius: 8px; /* Afgeronde hoeken */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+}
+
+.edit-form-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.edit-form-container input[type="text"],
+.edit-form-container input[type="email"],
+.edit-form-container input[type="date"],
+.edit-form-container textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    margin-bottom: 1rem;
+}
+
+.edit-form-container input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.edit-form-container button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #343a40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-form-container button:hover {
+    background-color: #495057;
+}
